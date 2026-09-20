@@ -1,9 +1,9 @@
 # Sturdy-Octo-Disco-Adding-Sunglasses-for-a-Cool-New-Look
 
-Reference Number: 212225230118
-Name: Joshna.M
+**Reference Number: 212225230118**
+**Developed by: Joshna.M**
 
-Sturdy Octo Disco is a fun project that adds sunglasses to photos using image processing.
+# Sturdy Octo Disco is a fun project that adds sunglasses to photos using image processing.
 
 Welcome to Sturdy Octo Disco, a fun and creative computer vision project designed to overlay sunglasses on passport-size photos. This repository demonstrates how image processing techniques can be used to create a playful transformation.
 
@@ -38,8 +38,9 @@ sunglasses = cv2.imread(
     "images/sunglasses_real.png",
     cv2.IMREAD_UNCHANGED
 )
-
-Define the Eye Region
+```
+**Define the Eye Region**
+```
 x1 = 140
 y1 = 70
 x2 = 225
@@ -47,9 +48,9 @@ y2 = 110
 
 width = x2 - x1
 height = y2 - y1
-
-Resize and Create the Alpha Mask
-
+```
+**Resize and Create the Alpha Mask**
+```
 sunglasses = cv2.resize(
     sunglasses,
     (width, height),
@@ -61,8 +62,9 @@ alpha = sunglasses[:, :, 3]
 
 alpha = alpha.astype(np.float32) / 255.0
 alpha = cv2.merge([alpha, alpha, alpha])
-
-Blend the Sunglasses
+```
+**Blend the Sunglasses**
+```
 roi = img[y1:y2, x1:x2].astype(np.float32)
 overlay = overlay.astype(np.float32)
 
@@ -74,10 +76,11 @@ blended = (
 blended = blended.astype(np.uint8)
 
 img[y1:y2, x1:x2] = blended
-
-Save the Result
+```
+**Save the Result**
+```
 cv2.imwrite("images/output.jpg", img)
-
+```
 ## How to Use:
 
 1. Clone this repository.
