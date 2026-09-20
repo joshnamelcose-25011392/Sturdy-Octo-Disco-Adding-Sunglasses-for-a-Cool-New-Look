@@ -1,72 +1,36 @@
-**# Sturdy-Octo-Disco-Adding-Sunglasses-for-a-Cool-New-Look**
+# Sturdy-Octo-Disco-Adding-Sunglasses-for-a-Cool-New-Look
 
+Sturdy Octo Disco is a fun project that adds sunglasses to photos using image processing.
 
+Welcome to Sturdy Octo Disco, a fun and creative computer vision project designed to overlay sunglasses on passport-size photos. This repository demonstrates how image processing techniques can be used to create a playful transformation.
 
-**A fun computer vision project that adds sunglasses to a passport-size photo using Python, OpenCV, NumPy, image masking, and alpha blending.**
+## Features:
 
+- Identifies the eye region using pixel coordinates.
+- Places a sunglasses overlay on the selected eye region.
+- Works with individual passport-size photos.
+- Uses masking and alpha blending for smooth results.
+- Can be customized with different sunglasses images.
 
+## Technologies Used:
 
-**## Features**
+- Python
+- OpenCV for image processing
+- NumPy for array manipulations
+- Pillow for image format conversion
 
+## How to Use:
 
+1. Clone this repository.
+2. Install the required Python packages.
+3. Add your passport-size photo to the `images` folder.
+4. Run `coordinate_finder.py` to identify the eye-region coordinates.
+5. Update the coordinates in `sunglass_overlay.py`.
+6. Run the script to create the sunglasses transformation.
 
-**- Identifies the eye region using pixel coordinates.**
+## Applications:
 
-**- Places a sunglasses overlay on the selected eye region.**
-
-**- Uses alpha masking for smooth blending.**
-
-**- Works with passport-size photos.**
-
-**- Allows different sunglasses images to be used.**
-
-
-
-**## Technologies Used**
-
-
-
-**- Python**
-
-**- OpenCV**
-
-**- NumPy**
-
-**- Pillow**
-
-**- pillow-avif-plugin**
-
-
-
-**## How to Use**
-
-
-
-**1. Clone this repository.**
-
-**2. Install the required Python packages.**
-
-**3. Place the passport photo and sunglasses image inside the `images` folder.**
-
-**4. Run `coordinate\_finder.py` to identify the eye-region coordinates.**
-
-**5. Update the coordinates in `sunglass\_overlay.py`.**
-
-**6. Run `sunglass\_overlay.py`.**
-
-**7. The final image will be saved as `images/output.jpg`.**
-
-
-
-**## Installation**
-
-
-
-**Install the required packages using:**
-
-
-
-**```bash**
-
-**pip install -r requirements.txt**
-
+- Learning basic image processing techniques.
+- Understanding image masking and alpha blending.
+- Practicing computer vision workflows.
+- Creating fun image transformations.
