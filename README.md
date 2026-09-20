@@ -1,11 +1,8 @@
 # Sturdy-Octo-Disco-Adding-Sunglasses-for-a-Cool-New-Look
 
 **Reference Number: 212225230118**
+
 **Developed by: Joshna.M**
-
-# Sturdy Octo Disco is a fun project that adds sunglasses to photos using image processing.
-
-Welcome to Sturdy Octo Disco, a fun and creative computer vision project designed to overlay sunglasses on passport-size photos. This repository demonstrates how image processing techniques can be used to create a playful transformation.
 
 ## Features:
 
